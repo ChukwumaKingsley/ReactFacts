@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 export default function Body() {
     return (
-        <div >
+        <div className='body'>
+            <section className="body--all-text">
             <h1 className='body--title'>
             Fun facts about React
             </h1>
@@ -13,6 +14,8 @@ export default function Body() {
                 <li className='body--fact'>Is maintained by Facebook</li>
                 <li className='body--fact'>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
+            </section>
+            <img src="/logo-background.png" className='body--background-logo'/>
         </div>
     )
 }

@@ -70,10 +70,28 @@ nav {
   letter-spacing: -1.953px;
 }
 
+.body {
+  display: flex;
+}
+
+
 .body--facts {
   margin-left: 51px;
 }
 
 .body--fact {
   margin-bottom: 20px;
+}
+
+.body--fact::marker {
+    margin-right: 30px;
+    size: 30px;
+    color: #61DAFB;
+}
+
+.body--background-logo {
+  width: 125px;
+  height: 222.74px;
+  margin-left: auto;
+  margin-top: 5%;
 }
