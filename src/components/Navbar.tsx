@@ -1,10 +1,26 @@
-
-export default function Navbar() {
+export default function Navbar(props: any) {
     return (
-        <nav >
-            <img src="/reactjs-icon.png" className='navbar--react-logo' />
-            <span className='navbar--title'>ReactFacts</span>
-            <span className='navbar--subtitle'>React Course - Project 1</span>
+         <nav 
+            className={props.darkMode ? "dark": ""}
+        >
+            <img 
+                className="nav--logo_icon"
+                src="./reactjs-icon.png"
+            />
+            <h3 className="nav--logo_text">ReactFacts</h3>
+            
+            <div 
+                className="toggler" 
+            >
+                <p className="toggler--light">Light</p>
+                <div 
+                    className="toggler--slider"
+                    onClick={props.onClick}
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+            </div>
         </nav>
     )
 }
