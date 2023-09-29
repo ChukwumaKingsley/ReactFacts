@@ -16,7 +16,7 @@ export default function App() {
     return (
         <div className="container">
             <Navbar onClick={toggleTheme} darkMode={darkMode}/>
-            <Main onClick={toggleTheme} darkMode={darkMode}/>
+            <Main darkMode={darkMode}/>
         </div>
     )
 }
